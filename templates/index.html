@@ -1,0 +1,9 @@
+{% if alpha %}
+    <ul>
+    {% for recipe in alpha %}
+        <li>{{ recipe.title }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>None available.</p>
+{% endif %}
