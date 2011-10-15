@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>{% block page_name %}{% endblock %} | A Clever Recipe App</title>
+        <link rel="stylesheet" href="{{ STATIC_URL }}main.css" type="text/css">
+		
+		{% block head_includes %}
+		{% endblock %}
+	</head>
+	<body>
+		<header>
+			<h1>Sugar and Spice and Everything Nice</h1>
+		</header>
+		<section id="content">
+			{% block content %}
+			{% endblock %}
+		</section>
+		<footer>
+			
+		</footer>
+	</body>
+</html>

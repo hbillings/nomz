@@ -1,9 +1,13 @@
-{% if alpha %}
-    <ul>
-    {% for recipe in alpha %}
-        <li>{{ recipe.title }}</li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>None available.</p>
-{% endif %}
+{% extends "base.html" %}
+
+{% block content %}
+	{% if alpha %}
+	    <ul>
+	    {% for recipe in alpha %}
+	        <li>{{ recipe.title }}</li>
+	    {% endfor %}
+	    </ul>
+	{% else %}
+	    <p>None available.</p>
+	{% endif %}
+{% endblock %}
